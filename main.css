@@ -141,9 +141,9 @@ body{
 
 @media screen and (max-width: 640px){
     
-    html{
-        width: 100%;
+    body{
         overflow-x: hidden;
+        
     }   
 
     header .container{
