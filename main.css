@@ -1,0 +1,262 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #249EA0;
+    color: #fff;
+    border-bottom: 6px solid #F78104;
+    padding: 16px 0px;
+    align-items: center;    
+}
+
+header .container{
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+}
+
+header li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+body{
+    background-color: #fff;
+}
+
+.container{
+    display: flex;
+    max-width: 1024px;
+    width: 100%;    
+    margin: 0px auto;
+}
+
+.container img{
+    width: 480px;
+}
+
+.sobre{
+    margin-top: 36px;
+}
+
+.sobre-a-loja{
+    margin-left: 16px; 
+
+}
+
+.produtos .container{
+    display: block;
+}
+
+.container h2{
+    color: #249EA0;
+    padding-bottom: 16px;    
+    border-bottom: 2px solid #F78104;
+
+}
+
+.sobre-a-loja p{
+    margin-top: 36px;
+    color: #249ea0;
+    font-size: large;
+}
+
+.produtos{
+    margin-top: 56px;    
+    margin-bottom: 65px;
+}
+
+.produtos h2{
+    width: 100%;
+}
+
+.cardapio{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    margin-top: 36px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.cardapio img{
+    max-width: 250px;
+    width: 100%;
+    border-radius: 1cqb;
+}
+
+.cardapio li{
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 1cqb;
+    box-shadow: 1px 1px 10px 5px #249ea021;
+}
+.cardapio li:hover{
+    background-color: #249ea0;
+    
+}
+
+.cardapio li:hover button{
+    background-color: #fff;
+    color: #249ea0;
+}
+
+
+.cardapio h3{
+    font-size: 23px;
+    margin-top: 26px;
+    margin-bottom: 8px;
+}
+
+.cardapio button{
+
+    margin-top: 16px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 0.5cqh;
+    border: none;
+    background-color: #249EA0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size:15px;
+}
+
+.cardapio button:hover{
+    background-color: #005f60;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px){
+    
+    html{
+        width: 100%;
+        overflow-x: hidden;
+    }   
+
+    header .container{
+        margin-left: 16px;
+        align-items: center;
+        
+    }
+
+    header .menu li{
+        display: block;
+    }
+
+    .container{
+        display: flex;        
+        max-width: 767px;
+        width: 100%;    
+        margin: 0px auto;
+    }
+
+    .sobre{
+        margin: 16px;
+        margin-top: 32px;
+        
+    }
+
+    .sobre img{
+
+        max-width: 767px;
+        max-height: 767px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    
+
+    .sobre .container{
+        display: block;
+        
+    }
+
+    .sobre-a-loja{
+        margin: 16px;
+    }
+
+    .sobre-a-loja h2{
+        max-width: 100%;
+
+    }
+
+    .produtos{
+        margin: 16px;
+    }
+
+    .produtos h2{
+        margin-top: 65px;
+        max-width: 100%;
+        
+    }        
+
+    .cardapio{
+        display: grid;
+        grid-template-columns: repeat(1, 98%);
+        margin-top: 36px;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .cardapio li{
+        margin: 12px 15px;
+    }
+
+    .cardapio img{        
+        max-width: 100%;
+    }
+
+}
+@media screen and (min-width: 641px) and (max-width:1023px){
+    
+    header .container{
+        align-items: center;
+        padding: 0px 64px;
+    }
+    
+    .sobre .container, .produtos .container{
+        max-width: 1023px;
+        display: block;
+        padding: 0px 64px;
+    }
+    .sobre img{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .cardapio{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        margin-top: 36px;
+        justify-content: space-between;
+        list-style: none;  
+        padding-bottom: 64; 
+    }
+
+    .cardapio li{
+        max-width: 70%;        
+        margin: 0px auto; 
+        margin-bottom: 32px;       
+    }
+
+    .cardapio img{
+        max-width: 100%;
+    }   
+
+
+    
+}
+
